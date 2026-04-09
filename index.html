@@ -1971,6 +1971,45 @@
       .pricing-table { min-width: 420px; }
     }
 
+    /* ▼ Hero セクション：モバイルはみ出し修正 */
+    @media (max-width: 600px) {
+      /* hero pill のテキストを折り返す */
+      .hero-pill {
+        white-space: normal;
+        word-break: break-all;
+        font-size: 0.72rem;
+        text-align: center;
+        justify-content: center;
+      }
+      /* ヒーロー本文ボタンを横幅100%で収める */
+      .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero-btns .btn {
+        white-space: normal;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.88rem;
+        padding: 14px 16px;
+        box-sizing: border-box;
+      }
+      /* サブタイトルのはみ出し防止 */
+      .hero-subtitle {
+        font-size: 0.95rem;
+        word-break: break-all;
+      }
+      .hero-body { max-width: 100%; }
+
+      /* Philosophy stats: 最後1枚を他と同じサイズで中央寄せ */
+      .philosophy-stat:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 6px);
+        margin: 0 auto;
+      }
+    }
+
     /* ▼ 比較テーブル・フォニックスその他 スマホ対応 */
     @media (max-width: 600px) {
       /* 比較テーブルはスクロール対応 */
@@ -2283,7 +2322,7 @@
       <div class="feat-card">
         <!-- Jennaの顔写真：正方形、顔が中央に -->
         <img
-          src="スクリーンショット 2026-04-02 11.52.30.png"
+          src="J&S1.jpeg"
           alt="ネイティブ講師 Jenna とのレッスン"
           class="feat-card-img feat-card-img--jenna"
         >
@@ -3105,11 +3144,11 @@
 ================================================ -->
 <section id="trial">
   <div class="container">
-    <span class="section-eyebrow">Free Trial</span>
-    <h2 class="section-title">まずは、体験してみてください。<br>無料です。</h2>
-    <p class="section-subtitle">「英語が全然できないけど大丈夫？」「うちの子、英語嫌いなんだけど…」そんな心配は、ご無用です。</p>
+    <span class="section-eyebrow">🌺 体験レッスン 完全無料</span>
+    <h2 class="section-title">「英語ってたのしい！」を<br>一緒に体験しませんか？</h2>
+    <p class="section-subtitle">「英語が全然できないけど大丈夫？」「うちの子、英語嫌いで…」— そんな方こそ、ぜひ来てみてください。</p>
 
-    <p class="trial-lead">CANOA English Schoolは、英語が初めての子・苦手な子こそ大歓迎。まずは教室の雰囲気を体感してみてください。体験レッスンは完全無料。入会の強制もありません。</p>
+    <p class="trial-lead">CANOA English School は、英語が初めての子・苦手な子こそ大歓迎です。難しく考えずに、まず教室の空気を感じてみてください。体験レッスンは完全無料。入会を急かすこともありません。</p>
 
     <div class="trial-steps">
       <div class="trial-step">
