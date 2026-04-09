@@ -520,6 +520,11 @@
       aspect-ratio: 16/7;
       object-position: center 30%;
     }
+    @media (max-width: 600px) {
+      .philosophy-photo-block img {
+        aspect-ratio: 4/3;
+      }
+    }
     .philosophy-photo-caption {
       position: absolute;
       bottom: 0;
@@ -2036,7 +2041,7 @@
       .philosophy-stats { grid-template-columns: repeat(2, 1fr); }
       .philosophy-stat:last-child:nth-child(odd) {
         grid-column: 1 / -1;
-        max-width: 220px;
+        max-width: calc(50% - 6px);
         margin: 0 auto;
       }
 
@@ -2130,7 +2135,7 @@
         海外で教員免許を取得したコーチが、フォニックスという「英語の読み解き方」を一から丁寧に教えます。単語の丸暗記ではなく、自分で読める力が身につく英語教室です。
       </p>
       <div class="hero-btns">
-        <a href="#trial" class="btn btn-orange">✨ 無料体験レッスンに申し込む（無料）</a>
+        <a href="#trial" class="btn btn-orange">✨ 無料体験レッスンに申し込む</a>
         <a href="#phonics" class="btn btn-outline-white">▼ フォニックスってどんなレッスン？</a>
       </div>
     </div>
