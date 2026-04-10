@@ -2007,12 +2007,6 @@
       }
       .hero-body { max-width: 100%; }
 
-      /* Philosophy stats: 最後1枚を他と同じサイズで中央寄せ */
-      .philosophy-stat:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        max-width: calc(50% - 6px);
-        margin: 0 auto;
-      }
     }
 
     /* ▼ 比較テーブル・フォニックスその他 スマホ対応 */
@@ -2036,14 +2030,6 @@
 
       /* phonics-coach-box */
       .phonics-coach-box { padding: 20px 16px; gap: 14px; }
-
-      /* Philosophy stats: 最後のアイテムを中央寄せ */
-      .philosophy-stats { grid-template-columns: repeat(2, 1fr); }
-      .philosophy-stat:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        max-width: calc(50% - 6px);
-        margin: 0 auto;
-      }
 
       /* Hero visual: サブ写真非表示をより早く適用 */
       .hero-visual { grid-template-columns: 1fr; }
@@ -2232,11 +2218,6 @@
 
     <!-- 5-column stats -->
     <div class="philosophy-stats">
-      <div class="philosophy-stat">
-        <span class="philosophy-stat-icon">📚</span>
-        <span class="philosophy-stat-val">7名</span>
-        <span class="philosophy-stat-label">英検合格<br>（昨年度）</span>
-      </div>
       <div class="philosophy-stat">
         <span class="philosophy-stat-icon">🌴</span>
         <span class="philosophy-stat-val">毎月</span>
